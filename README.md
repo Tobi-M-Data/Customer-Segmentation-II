@@ -1,159 +1,143 @@
-Customer Segmentation II
-Introduction
+# Customer Segmentation II
+
+## Introduction
 This project represents an advanced implementation of customer segmentation analysis using SQL Server database engineering and Power BI visualization. Building upon traditional segmentation methodologies, this version leverages enterprise-grade data infrastructure to provide scalable, production-ready customer analytics. The project aims to transform raw transactional data into actionable business intelligence through sophisticated RFM analysis, customer lifetime value calculations, and interactive dashboards.
 
-Dataset Justification
+## Dataset Justification
 The project utilizes the "Online Retail" dataset spanning 2010-2011 from a UK-based online retail company. This specific dataset was chosen for several strategic reasons:
 
-Economic Context: This period captures consumer behavior during the post-2008 financial crisis recovery, providing valuable insights into customer spending patterns during economic stabilization.
-E-commerce Evolution: 2010-2011 marked a significant transition in online retail, as businesses were adopting multi-channel strategies. This dataset captures customer behavior during this crucial evolutionary period.
-Data Quality: The dataset provides a complete annual cycle plus additional months, allowing for:
+### Economic Context
+* This period captures consumer behavior during the post-2008 financial crisis recovery
+* Provides valuable insights into customer spending patterns during economic stabilization
 
-Full year-over-year comparisons
-Holiday season analysis
-Seasonal trend identification
-Sufficient time span for meaningful customer lifetime value calculations
+### E-commerce Evolution
+* 2010-2011 marked a significant transition in online retail
+* Captures customer behavior as businesses were adopting multi-channel strategies
 
+### Data Quality
+The dataset provides a complete annual cycle plus additional months, allowing for:
+* Full year-over-year comparisons
+* Holiday season analysis
+* Seasonal trend identification
+* Sufficient time span for meaningful customer lifetime value calculations
 
-Market Representation: The data comes from a mid-sized UK retailer with international transactions, making it relevant for both local and global market analysis.
+### Market Representation
+* Data from a mid-sized UK retailer with international transactions
+* Relevant for both local and global market analysis
 
-Technical Architecture
-Database Infrastructure
+## Technical Architecture
 
-SQL Server implementation with optimized storage configuration
-Structured tables with appropriate constraints and computed columns
-Strategic indexing for performance optimization
-Views for streamlined Power BI integration
+### Database Infrastructure
+* SQL Server implementation with optimized storage configuration
+* Structured tables with appropriate constraints and computed columns
+* Strategic indexing for performance optimization
+* Views for streamlined Power BI integration
 
-Analytics Pipeline
+### Analytics Pipeline
 
-Data Ingestion & Cleaning
+#### 1. Data Ingestion & Cleaning
+* Bulk import procedures
+* Data validation and quality checks
+* Null handling and data standardization
 
-Bulk import procedures
-Data validation and quality checks
-Null handling and data standardization
+#### 2. Customer Analytics
+* RFM (Recency, Frequency, Monetary) analysis
+* Customer Lifetime Value calculations
+* Cohort analysis and retention metrics
 
+#### 3. Business Intelligence
+* Interactive Power BI dashboards
+* Geographic revenue analysis
+* Customer segment visualization
+* Performance metrics tracking
 
-Customer Analytics
+## Implementation Components
 
-RFM (Recency, Frequency, Monetary) analysis
-Customer Lifetime Value calculations
-Cohort analysis and retention metrics
+### Database Design
+* Optimized table structures
+* Computed columns for derived metrics
+* Indexed views for reporting efficiency
+* Data quality constraints
 
+### Analysis Features
 
-Business Intelligence
+#### 1. RFM Analysis
+* Recency scoring
+* Frequency calculation
+* Monetary value assessment
+* Customer segmentation logic
 
-Interactive Power BI dashboards
-Geographic revenue analysis
-Customer segment visualization
-Performance metrics tracking
+#### 2. CLV Implementation
+* Customer lifetime tracking
+* Value calculation algorithms
+* Segment-based analysis
 
+#### 3. Cohort Analysis
+* Monthly cohort tracking
+* Retention rate calculations
+* Customer activity monitoring
 
+### Power BI Dashboard
+* Customer segment distribution
+* Geographic revenue mapping
+* Key performance metrics
+* Trend analysis visualizations
 
-Implementation Components
-Database Design
+## Key Metrics
+* Total Customers: 4,338
+* Total Revenue: £8.91M
+* Average Transaction Value: £22.40
+* Total Transactions: 398K
 
-Optimized table structures
-Computed columns for derived metrics
-Indexed views for reporting efficiency
-Data quality constraints
+## Customer Segments
 
-Analysis Features
+### Elite Customers (21%)
+* Average CLV: £7,948
+* High retention rate
+* Premium engagement metrics
 
-RFM Analysis
+### Regular Customers (79%)
+* Average CLV: £75
+* Varied engagement levels
+* Growth potential identification
 
-Recency scoring
-Frequency calculation
-Monetary value assessment
-Customer segmentation logic
+## Installation Requirements
 
+### Database Setup
+* SQL Server 2016 or later
+* Minimum 4GB storage
+* SQL Server Management Studio
 
-CLV Implementation
+### Visualization Tools
+* Power BI Desktop
+* Latest updates installed
 
-Customer lifetime tracking
-Value calculation algorithms
-Segment-based analysis
+## Setup Instructions
 
-
-Cohort Analysis
-
-Monthly cohort tracking
-Retention rate calculations
-Customer activity monitoring
-
-
-
-Power BI Dashboard
-
-Customer segment distribution
-Geographic revenue mapping
-Key performance metrics
-Trend analysis visualizations
-
-Key Metrics
-
-Total Customers: 4,338
-Total Revenue: £8.91M
-Average Transaction Value: £22.40
-Total Transactions: 398K
-
-Customer Segments
-
-Elite Customers (21%)
-
-Average CLV: £7,948
-High retention rate
-Premium engagement metrics
-
-
-Regular Customers (79%)
-
-Average CLV: £75
-Varied engagement levels
-Growth potential identification
-
-
-
-Installation Requirements
-Database Setup
-
-SQL Server 2016 or later
-Minimum 4GB storage
-SQL Server Management Studio
-
-Visualization Tools
-
-Power BI Desktop
-Latest updates installed
-
-Setup Instructions
-
-Database Creation
-
-sqlCopy-- Execute scripts in order:
+### Database Creation
+Execute scripts in order:
 1. database_setup/
 2. data_import/
 3. analysis/
 4. views/
 
-Power BI Configuration
+### Power BI Configuration
+1. Connect to SQL views
+2. Refresh data model
+3. Configure parameters
 
+## Usage Guide
+1. Execute SQL scripts in specified order
+2. Import Power BI template
+3. Connect to database
+4. Refresh visualizations
 
-Connect to SQL views
-Refresh data model
-Configure parameters
-
-Usage Guide
-
-Execute SQL scripts in specified order
-Import Power BI template
-Connect to database
-Refresh visualizations
-
-Contributing
+## Contributing
 Contributions are welcome. Please fork the repository and submit pull requests for any enhancements.
-License
-MIT License
+
+## License
+MIT License  
 Copyright (c) 2024 Tobi-M-Data
-Contact
+
+## Contact
 tobimautin@gmail.com
