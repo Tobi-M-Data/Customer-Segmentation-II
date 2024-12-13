@@ -1,0 +1,48 @@
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+*.bak
+
+# Power BI
+*.pbix
+*.pbit
+*.pbids
+
+# Visual Studio / SSMS
+.vs/
+*.dbmdl
+*.jfm
+*.user
+*.suo
+
+# Connection strings and sensitive data
+connection_strings.txt
+config.json
+*.config
+appsettings.json
+
+# Temporary files
+*.temp
+*.tmp
+~$*
+
+# Log files
+*.log
+*.trc
+
+# Windows/macOS system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment-specific files
+.env
+.env.local
+
+# Backup files
+*backup*
+*backup.sql
+
+# Generated reports
+/reports/
