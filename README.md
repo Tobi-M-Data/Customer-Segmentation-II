@@ -1,143 +1,161 @@
-# Customer Segmentation II
+# Customer Segmentation Analysis Project
 
-## Introduction
-This project represents an advanced implementation of customer segmentation analysis using SQL Server database engineering and Power BI visualization. Building upon traditional segmentation methodologies, this version leverages enterprise-grade data infrastructure to provide scalable, production-ready customer analytics. The project aims to transform raw transactional data into actionable business intelligence through sophisticated RFM analysis, customer lifetime value calculations, and interactive dashboards.
+## Overview
+Advanced customer segmentation implementation using SQL Server and Power BI, analyzing retail transaction data to derive actionable business insights through RFM (Recency, Frequency, Monetary) analysis and Customer Lifetime Value calculations.
 
-## Dataset Justification
-The project utilizes the "Online Retail" dataset spanning 2010-2011 from a UK-based online retail company. This specific dataset was chosen for several strategic reasons:
+## 📊 Key Metrics
+- **4,338** Total Customers Analyzed
+- **398K+** Transactions Processed
+- **£8.91M** Total Revenue
+- **5** Distinct Customer Segments Identified
+- **82%** Revenue from UK Market
 
-### Economic Context
-* This period captures consumer behavior during the post-2008 financial crisis recovery
-* Provides valuable insights into customer spending patterns during economic stabilization
+## 🛠️ Technical Stack
+- **Database:** SQL Server 2016
+- **Analysis:** T-SQL, RFM Analysis
+- **Visualization:** Power BI
+- **Data Processing:** Bulk Insert, ETL Pipeline
 
-### E-commerce Evolution
-* 2010-2011 marked a significant transition in online retail
-* Captures customer behavior as businesses were adopting multi-channel strategies
+## 📂 Repository Structure
+```
+├── docs/
+│   └── complete-documentation.md    # Detailed technical documentation
+├── sql/
+│   ├── database-setup/             # Database creation and configuration
+│   ├── analysis/                   # RFM and CLV analysis scripts
+│   └── views/                      # SQL views for Power BI
+├── powerbi/
+│   └── dashboard-screenshots/      # Visual analytics screenshots
+└── LICENSE
+```
 
-### Data Quality
-The dataset provides a complete annual cycle plus additional months, allowing for:
-* Full year-over-year comparisons
-* Holiday season analysis
-* Seasonal trend identification
-* Sufficient time span for meaningful customer lifetime value calculations
+## 🎯 Features
+- Advanced RFM (Recency, Frequency, Monetary) Analysis
+- Customer Lifetime Value (CLV) Calculations
+- Geographic Market Analysis
+- Customer Segmentation Models
+- Interactive Power BI Dashboards
 
-### Market Representation
-* Data from a mid-sized UK retailer with international transactions
-* Relevant for both local and global market analysis
+## 📈 Key Findings
+1. **Customer Segments:**
+   - Elite Customers (21%): £7,948 avg CLV
+   - Regular Customers (79%): £75 avg CLV
 
-## Technical Architecture
+2. **Geographic Distribution:**
+   - UK: £7.3M revenue (82%)
+   - Netherlands: £285K
+   - EIRE: £265K
+   - Germany: £229K
+   - France: £209K
 
-### Database Infrastructure
-* SQL Server implementation with optimized storage configuration
-* Structured tables with appropriate constraints and computed columns
-* Strategic indexing for performance optimization
-* Views for streamlined Power BI integration
+## 🚀 Getting Started
+1. Clone the repository
+2. Execute SQL scripts in the following order:
+   - Database setup
+   - Table creation
+   - Data import
+   - Analysis scripts
+3. Open Power BI dashboard file
+4. Connect to your SQL Server instance
 
-### Analytics Pipeline
+## 📌 Prerequisites
+- SQL Server 2016 or higher
+- Power BI Desktop
+- Minimum 4GB storage space
+- Basic understanding of T-SQL
 
-#### 1. Data Ingestion & Cleaning
-* Bulk import procedures
-* Data validation and quality checks
-* Null handling and data standardization
+## 📝 Documentation
+For detailed technical documentation, please refer to the [complete documentation](docs/complete-documentation.md) in the docs folder.
 
-#### 2. Customer Analytics
-* RFM (Recency, Frequency, Monetary) analysis
-* Customer Lifetime Value calculations
-* Cohort analysis and retention metrics
+## 📊 Sample Visualizations
+[Dashboard screenshots will be added here]
 
-#### 3. Business Intelligence
-* Interactive Power BI dashboards
-* Geographic revenue analysis
-* Customer segment visualization
-* Performance metrics tracking
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome. Feel free to check issues page if you want to contribute.
 
-## Implementation Components
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Database Design
-* Optimized table structures
-* Computed columns for derived metrics
-* Indexed views for reporting efficiency
-* Data quality constraints
+## ✍️ Author
+**Tobi Mautin**
+- Project completed: December 2024# Customer Segmentation Analysis Project
 
-### Analysis Features
+## Overview
+Advanced customer segmentation implementation using SQL Server and Power BI, analyzing retail transaction data to derive actionable business insights through RFM (Recency, Frequency, Monetary) analysis and Customer Lifetime Value calculations.
 
-#### 1. RFM Analysis
-* Recency scoring
-* Frequency calculation
-* Monetary value assessment
-* Customer segmentation logic
+## 📊 Key Metrics
+- **4,338** Total Customers Analyzed
+- **398K+** Transactions Processed
+- **£8.91M** Total Revenue
+- **5** Distinct Customer Segments Identified
+- **82%** Revenue from UK Market
 
-#### 2. CLV Implementation
-* Customer lifetime tracking
-* Value calculation algorithms
-* Segment-based analysis
+## 🛠️ Technical Stack
+- **Database:** SQL Server 2016
+- **Analysis:** T-SQL, RFM Analysis
+- **Visualization:** Power BI
+- **Data Processing:** Bulk Insert, ETL Pipeline
 
-#### 3. Cohort Analysis
-* Monthly cohort tracking
-* Retention rate calculations
-* Customer activity monitoring
+## 📂 Repository Structure
+```
+├── docs/
+│   └── complete-documentation.md    # Detailed technical documentation
+├── sql/
+│   ├── database-setup/             # Database creation and configuration
+│   ├── analysis/                   # RFM and CLV analysis scripts
+│   └── views/                      # SQL views for Power BI
+├── powerbi/
+│   └── dashboard-screenshots/      # Visual analytics screenshots
+└── LICENSE
+```
 
-### Power BI Dashboard
-* Customer segment distribution
-* Geographic revenue mapping
-* Key performance metrics
-* Trend analysis visualizations
+## 🎯 Features
+- Advanced RFM (Recency, Frequency, Monetary) Analysis
+- Customer Lifetime Value (CLV) Calculations
+- Geographic Market Analysis
+- Customer Segmentation Models
+- Interactive Power BI Dashboards
 
-## Key Metrics
-* Total Customers: 4,338
-* Total Revenue: £8.91M
-* Average Transaction Value: £22.40
-* Total Transactions: 398K
+## 📈 Key Findings
+1. **Customer Segments:**
+   - Elite Customers (21%): £7,948 avg CLV
+   - Regular Customers (79%): £75 avg CLV
 
-## Customer Segments
+2. **Geographic Distribution:**
+   - UK: £7.3M revenue (82%)
+   - Netherlands: £285K
+   - EIRE: £265K
+   - Germany: £229K
+   - France: £209K
 
-### Elite Customers (21%)
-* Average CLV: £7,948
-* High retention rate
-* Premium engagement metrics
+## 🚀 Getting Started
+1. Clone the repository
+2. Execute SQL scripts in the following order:
+   - Database setup
+   - Table creation
+   - Data import
+   - Analysis scripts
+3. Open Power BI dashboard file
+4. Connect to your SQL Server instance
 
-### Regular Customers (79%)
-* Average CLV: £75
-* Varied engagement levels
-* Growth potential identification
+## 📌 Prerequisites
+- SQL Server 2016 or higher
+- Power BI Desktop
+- Minimum 4GB storage space
+- Basic understanding of T-SQL
 
-## Installation Requirements
+## 📝 Documentation
+For detailed technical documentation, please refer to the [complete documentation](docs/complete-documentation.md) in the docs folder.
 
-### Database Setup
-* SQL Server 2016 or later
-* Minimum 4GB storage
-* SQL Server Management Studio
+## 📊 Sample Visualizations
+![image](https://github.com/user-attachments/assets/685b2923-87f6-4b2f-9695-8f93c7430ed7)
 
-### Visualization Tools
-* Power BI Desktop
-* Latest updates installed
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome. Feel free to check issues page if you want to contribute.
 
-## Setup Instructions
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Database Creation
-Execute scripts in order:
-1. database_setup/
-2. data_import/
-3. analysis/
-4. views/
-
-### Power BI Configuration
-1. Connect to SQL views
-2. Refresh data model
-3. Configure parameters
-
-## Usage Guide
-1. Execute SQL scripts in specified order
-2. Import Power BI template
-3. Connect to database
-4. Refresh visualizations
-
-## Contributing
-Contributions are welcome. Please fork the repository and submit pull requests for any enhancements.
-
-## License
-MIT License  
-Copyright (c) 2024 Tobi-M-Data
-
-## Contact
-tobimautin@gmail.com
+## ✍️ Author
+**Tobi Mautin**
+- Project completed: December 2024
